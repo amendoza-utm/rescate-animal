@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para registrar animales rescatados">
+    <title>Reportar rescate | Sistema de Rescate Animal</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+        <p>Registro de nuevos animales rescatados.</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar rescate</a></li>
+            <li><a href="rescates.html">Casos registrados</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Registrar un nuevo rescate</h2>
+
+            <p>
+                Complete el siguiente formulario con la información
+                del animal encontrado para registrar su caso.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Información del animal</legend>
+
+                    <label for="nombre">Nombre o título del caso:</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Ej. Perro encontrado en el parque"
+                           required>
+
+                    <br><br>
+
+                    <label for="categoria">Categoría del animal:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="perro">Perros</option>
+                        <option value="gato">Gatos</option>
+                        <option value="fauna-silvestre">Fauna Silvestre</option>
+                        <option value="otro">Otro (Especificado en título del caso)</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="fecha">Fecha del rescate:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <br><br>
+
+                    <label for="ubicacion">Lugar del rescate:</label>
+                    <input type="text" id="ubicacion" name="ubicacion"
+                           placeholder="Ingrese la ubicación">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Urgencia médica</legend>
+
+                    <p>Seleccione el nivel de urgencia del animal:</p>
+
+                    <input type="radio" id="alta" name="urgencia"
+                           value="alta" required>
+                    <label for="alta">Alta</label>
+
+                    <br>
+
+                    <input type="radio" id="media" name="urgencia"
+                           value="media">
+                    <label for="media">Media</label>
+
+                    <br>
+
+                    <input type="radio" id="baja" name="urgencia"
+                           value="baja">
+                    <label for="baja">Baja</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descripción del rescate</legend>
+
+                    <label for="descripcion">
+                        Describa el estado en que fue encontrado el animal:
+                    </label>
+
+                    <br>
+
+                    <textarea id="descripcion" name="descripcion"
+                              rows="6" cols="50"
+                              placeholder="Describa las condiciones físicas,
+comportamiento y situación del animal..."
+                              required></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Registrar rescate</button>
+                <button type="reset">Limpiar formulario</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Sistema de Control de Rescate y Adopción Animal</p>
+        <p>Contacto: refugioanimal@example.com</p>
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
